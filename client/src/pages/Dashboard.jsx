@@ -65,7 +65,7 @@ const Dashboard = () => {
               <span className="text-xs font-bold tracking-[0.2em] text-amber-500 uppercase">The Private Suite</span>
             </div>
             <h1 className="text-5xl md:text-6xl font-serif font-medium text-white tracking-tight mb-4">
-              Aashutosh <span className="text-neutral-600 italic">Singh</span>
+              Mahendra <span className="text-neutral-600 italic">Jangid</span>
             </h1>
             <div className="flex items-center gap-6">
                 <p className="text-neutral-400 text-lg max-w-md font-light leading-relaxed">
