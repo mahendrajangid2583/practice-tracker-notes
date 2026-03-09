@@ -36,9 +36,8 @@ app.get('/__ping', (req, res) => {
 
 // Middleware
 const allowedOrigins = [
+    process.env.CLIENT_URL,
     "http://localhost:5173",
-    "https://practise-tracker.vercel.app",
-    "https://aashu-singh.vercel.app",
     "chrome-extension://cfgdpghfcdfpbehhjipkgbacdhchmipc"
 ];
 
