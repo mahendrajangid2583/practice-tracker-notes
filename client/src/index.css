@@ -1,0 +1,200 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-slate-900 text-slate-100 font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .prose-invert-custom {
+    @apply text-slate-300;
+    white-space: pre-wrap;
+  }
+
+  .prose-invert-custom p {
+    @apply mb-3 leading-relaxed;
+  }
+
+  .prose-invert-custom ul {
+    @apply list-disc list-outside mb-3 pl-5;
+  }
+
+  .prose-invert-custom ol {
+    @apply list-decimal list-outside mb-3 pl-5;
+  }
+
+  .prose-invert-custom li {
+    @apply mb-1;
+  }
+
+  .prose-invert-custom h1 {
+    @apply text-xl font-bold text-white mb-2 mt-4;
+  }
+
+  .prose-invert-custom h2 {
+    @apply text-lg font-bold text-white mb-2 mt-3;
+  }
+
+  .prose-invert-custom a {
+    @apply text-amber-400 hover:text-amber-300 underline decoration-amber-500/30 underline-offset-2 transition-colors;
+  }
+
+  .prose-invert-custom strong {
+    @apply font-bold;
+  }
+
+  .prose-invert-custom code {
+    @apply bg-slate-800 px-1 py-0.5 rounded text-amber-300 font-mono text-xs;
+  }
+
+  .prose-invert-custom pre {
+    @apply bg-slate-950 p-3 rounded-lg overflow-x-auto mb-3 border border-slate-800;
+  }
+
+  .prose-invert-custom blockquote {
+    @apply border-l-4 border-amber-500/50 pl-4 italic text-slate-400 my-3;
+  }
+}
+
+/* Mention Dropdown Styles */
+.ProseMirror {
+  @apply outline-none;
+}
+
+.ProseMirror p {
+  @apply mb-3 leading-relaxed;
+}
+
+/* Headings */
+.ProseMirror h1 {
+  @apply text-2xl font-bold text-white mb-4 mt-6;
+}
+
+.ProseMirror h2 {
+  @apply text-xl font-bold text-white mb-3 mt-5;
+}
+
+.ProseMirror h3 {
+  @apply text-lg font-bold text-white mb-2 mt-4;
+}
+
+/* Lists - Critical Fix */
+.ProseMirror ul {
+  @apply list-disc list-outside mb-3 pl-5;
+}
+
+.ProseMirror ol {
+  @apply list-decimal list-outside mb-3 pl-5;
+}
+
+.ProseMirror li {
+  @apply mb-1;
+}
+
+.ProseMirror li p {
+  @apply inline;
+}
+
+/* Inline formatting */
+.ProseMirror strong {
+  @apply font-bold;
+}
+
+.ProseMirror em {
+  @apply italic text-slate-200;
+}
+
+.ProseMirror s {
+  @apply line-through text-slate-500;
+}
+
+.ProseMirror u {
+  @apply underline decoration-slate-500 underline-offset-2;
+}
+
+.ProseMirror code {
+  @apply bg-slate-800 px-1.5 py-0.5 rounded text-amber-300 font-mono text-sm;
+}
+
+.ProseMirror a {
+  @apply text-amber-400 hover:text-amber-300 underline decoration-amber-500/30 underline-offset-2 transition-colors cursor-pointer;
+}
+
+.ProseMirror blockquote {
+  @apply border-l-4 border-amber-500/50 pl-4 italic text-slate-400 my-4;
+}
+
+.ProseMirror hr {
+  @apply border-neutral-800 my-6;
+}
+
+/* Selection */
+.ProseMirror ::selection {
+  @apply bg-amber-500/30 text-white;
+}
+
+/* Placeholder specific */
+.ProseMirror p.is-editor-empty:first-child::before {
+  @apply text-neutral-600 float-left h-0 pointer-events-none;
+  content: attr(data-placeholder);
+}
+
+.ql-mention-list-container {
+  @apply !bg-neutral-900 !border !border-slate-700 !shadow-xl !rounded-lg !overflow-hidden !z-[9999];
+}
+
+.ql-mention-list-item {
+  @apply !text-slate-300 !px-4 !py-2 !cursor-pointer !transition-colors;
+}
+
+.ql-mention-list-item.selected {
+  @apply !bg-slate-800 !text-amber-400;
+}
+
+.mention {
+  @apply !text-amber-400 !bg-amber-500/10 !rounded !px-1 !py-0.5 !decoration-amber-500/30 !underline-offset-2;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Global Scrollbar Hide */
+* {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Visual Image Block */
+.visual-image-container {
+  @apply my-6 rounded-lg overflow-hidden bg-neutral-900 border border-neutral-800 flex justify-center;
+}
+
+.visual-image {
+  @apply w-full h-auto max-h-[600px] object-contain block;
+}
+
+/* Ensure read mode respects these styles */
+.prose-invert-custom .visual-image-container {
+  @apply my-6 rounded-lg overflow-hidden bg-neutral-900 border border-neutral-800 flex justify-center;
+}
+
+.prose-invert-custom .visual-image {
+  @apply w-full h-auto max-h-[600px] object-contain block mx-auto;
+}

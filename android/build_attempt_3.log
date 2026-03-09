@@ -1,0 +1,87 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/C:/Users/aashutosh/.gradle/wrapper/dists/gradle-8.9-bin/90cnw93cvbtalezasaz0blq0a/gradle-8.9/lib/native-platform-0.22-milestone-26.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+> Task :app:clean
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:generateDebugResValues FROM-CACHE
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:checkDebugAarMetadata
+> Task :app:mergeDebugResources FROM-CACHE
+> Task :app:packageDebugResources FROM-CACHE
+> Task :app:parseDebugLocalResources FROM-CACHE
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug FROM-CACHE
+> Task :app:processDebugMainManifest FROM-CACHE
+> Task :app:processDebugManifest FROM-CACHE
+> Task :app:processDebugManifestForPackage FROM-CACHE
+> Task :app:processDebugResources FROM-CACHE
+> Task :app:javaPreCompileDebug FROM-CACHE
+> Task :app:mergeDebugShaders FROM-CACHE
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets FROM-CACHE
+> Task :app:compressDebugAssets FROM-CACHE
+> Task :app:desugarDebugFileDependencies FROM-CACHE
+> Task :app:mergeDebugJniLibFolders FROM-CACHE
+> Task :app:mergeDebugNativeLibs NO-SOURCE
+> Task :app:stripDebugDebugSymbols NO-SOURCE
+> Task :app:validateSigningDebug
+> Task :app:writeDebugAppMetadata
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:checkDebugDuplicateClasses
+> Task :app:mergeExtDexDebug FROM-CACHE
+> Task :app:mergeLibDexDebug FROM-CACHE
+> Task :app:kspDebugKotlin
+
+> Task :app:compileDebugKotlin FAILED
+e: file:///C:/Users/aashutosh/Documents/vscode/WED/aashu/android/app/src/main/java/com/aashu/privatesuite/MainActivity.kt:26:21 Unresolved reference: NavHost
+e: file:///C:/Users/aashutosh/Documents/vscode/WED/aashu/android/app/src/main/java/com/aashu/privatesuite/MainActivity.kt:26:79 Unresolved reference: Screen
+e: file:///C:/Users/aashutosh/Documents/vscode/WED/aashu/android/app/src/main/java/com/aashu/privatesuite/MainActivity.kt:27:25 Unresolved reference: composable
+e: file:///C:/Users/aashutosh/Documents/vscode/WED/aashu/android/app/src/main/java/com/aashu/privatesuite/MainActivity.kt:27:36 Unresolved reference: Screen
+e: file:///C:/Users/aashutosh/Documents/vscode/WED/aashu/android/app/src/main/java/com/aashu/privatesuite/MainActivity.kt:28:29 @Composable invocations can only happen from the context of a @Composable function
+e: file:///C:/Users/aashutosh/Documents/vscode/WED/aashu/android/app/src/main/java/com/aashu/privatesuite/MainActivity.kt:30:25 Unresolved reference: composable
+e: file:///C:/Users/aashutosh/Documents/vscode/WED/aashu/android/app/src/main/java/com/aashu/privatesuite/MainActivity.kt:31:37 Unresolved reference: Screen
+e: file:///C:/Users/aashutosh/Documents/vscode/WED/aashu/android/app/src/main/java/com/aashu/privatesuite/MainActivity.kt:32:48 Unresolved reference: navArgument
+e: file:///C:/Users/aashutosh/Documents/vscode/WED/aashu/android/app/src/main/java/com/aashu/privatesuite/MainActivity.kt:32:78 Unresolved reference: type
+e: file:///C:/Users/aashutosh/Documents/vscode/WED/aashu/android/app/src/main/java/com/aashu/privatesuite/MainActivity.kt:32:85 Unresolved reference: NavType
+e: file:///C:/Users/aashutosh/Documents/vscode/WED/aashu/android/app/src/main/java/com/aashu/privatesuite/MainActivity.kt:34:29 Unresolved reference: CollectionDetailScreen
+e: file:///C:/Users/aashutosh/Documents/vscode/WED/aashu/android/app/src/main/java/com/aashu/privatesuite/MainActivity.kt:36:25 Unresolved reference: composable
+e: file:///C:/Users/aashutosh/Documents/vscode/WED/aashu/android/app/src/main/java/com/aashu/privatesuite/MainActivity.kt:37:37 Unresolved reference: Screen
+e: file:///C:/Users/aashutosh/Documents/vscode/WED/aashu/android/app/src/main/java/com/aashu/privatesuite/MainActivity.kt:38:48 Unresolved reference: navArgument
+e: file:///C:/Users/aashutosh/Documents/vscode/WED/aashu/android/app/src/main/java/com/aashu/privatesuite/MainActivity.kt:38:72 Unresolved reference: type
+e: file:///C:/Users/aashutosh/Documents/vscode/WED/aashu/android/app/src/main/java/com/aashu/privatesuite/MainActivity.kt:38:79 Unresolved reference: NavType
+e: file:///C:/Users/aashutosh/Documents/vscode/WED/aashu/android/app/src/main/java/com/aashu/privatesuite/MainActivity.kt:39:29 Cannot infer a type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/aashutosh/Documents/vscode/WED/aashu/android/app/src/main/java/com/aashu/privatesuite/MainActivity.kt:43:29 Unresolved reference: EditorScreen
+e: file:///C:/Users/aashutosh/Documents/vscode/WED/aashu/android/app/src/main/java/com/aashu/privatesuite/MainActivity.kt:49:25 Unresolved reference: composable
+e: file:///C:/Users/aashutosh/Documents/vscode/WED/aashu/android/app/src/main/java/com/aashu/privatesuite/MainActivity.kt:49:36 Unresolved reference: Screen
+e: file:///C:/Users/aashutosh/Documents/vscode/WED/aashu/android/app/src/main/java/com/aashu/privatesuite/MainActivity.kt:50:29 Unresolved reference: StreakScreen
+e: file:///C:/Users/aashutosh/Documents/vscode/WED/aashu/android/app/src/main/java/com/aashu/privatesuite/presentation/collection/CollectionDetailScreen.kt:11:40 Unresolved reference: automirrored
+e: file:///C:/Users/aashutosh/Documents/vscode/WED/aashu/android/app/src/main/java/com/aashu/privatesuite/presentation/collection/CollectionDetailScreen.kt:42:36 Unresolved reference: AutoMirrored
+e: file:///C:/Users/aashutosh/Documents/vscode/WED/aashu/android/app/src/main/java/com/aashu/privatesuite/presentation/editor/EditorScreen.kt:24:75 Unresolved reference: dp
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.9/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 34s
+27 actionable tasks: 10 executed, 17 from cache
